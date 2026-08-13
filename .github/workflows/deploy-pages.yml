@@ -33,7 +33,7 @@ jobs:
           cache: pnpm
 
       - name: Instalar dependencias
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile --ignore-scripts
 
       - name: Construir la versión estática
         run: pnpm run build:pages
