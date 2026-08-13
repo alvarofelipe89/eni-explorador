@@ -1,4 +1,24 @@
-# vinext-starter
+# Explorador ENI
+
+Explorador educativo de la Encuesta Nacional de Innovación en Empresas de
+Chile. El mismo código admite dos destinos de publicación:
+
+- Sites, mediante la compilación `pnpm build`.
+- GitHub Pages, mediante `pnpm build:pages` y el flujo automático incluido en
+  `.github/workflows/deploy-pages.yml`.
+
+## GitHub Pages
+
+La automatización publica cada cambio enviado a la rama `main`. En GitHub,
+abre **Settings → Pages** y selecciona **GitHub Actions** como fuente. La URL
+esperada para este repositorio es:
+
+https://alvarofelipe89.github.io/eni-explorador/
+
+La salida estática local se genera en `github-pages-dist/` y no se guarda en
+Git.
+
+## Proyecto original
 
 A clean full-stack starter running on
 [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
